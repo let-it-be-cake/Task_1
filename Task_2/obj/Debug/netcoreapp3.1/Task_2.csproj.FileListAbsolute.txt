@@ -1,0 +1,16 @@
+D:\IDTL\Epam\Task_2\bin\Debug\netcoreapp3.1\Task_2.exe
+D:\IDTL\Epam\Task_2\obj\Debug\netcoreapp3.1\Task_2.csprojAssemblyReference.cache
+D:\IDTL\Epam\Task_2\obj\Debug\netcoreapp3.1\Task_2.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_2\obj\Debug\netcoreapp3.1\Task_2.AssemblyInfo.cs
+D:\IDTL\Epam\Task_2\obj\Debug\netcoreapp3.1\Task_2.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_2\bin\Debug\netcoreapp3.1\Task_2.deps.json
+D:\IDTL\Epam\Task_2\bin\Debug\netcoreapp3.1\Task_2.runtimeconfig.json
+D:\IDTL\Epam\Task_2\bin\Debug\netcoreapp3.1\Task_2.runtimeconfig.dev.json
+D:\IDTL\Epam\Task_2\bin\Debug\netcoreapp3.1\Task_2.dll
+D:\IDTL\Epam\Task_2\bin\Debug\netcoreapp3.1\Task_2.pdb
+D:\IDTL\Epam\Task_2\bin\Debug\netcoreapp3.1\CsvHelper.dll
+D:\IDTL\Epam\Task_2\obj\Debug\netcoreapp3.1\Task_2.csproj.CopyComplete
+D:\IDTL\Epam\Task_2\obj\Debug\netcoreapp3.1\Task_2.dll
+D:\IDTL\Epam\Task_2\obj\Debug\netcoreapp3.1\Task_2.pdb
+D:\IDTL\Epam\Task_2\obj\Debug\netcoreapp3.1\Task_2.genruntimeconfig.cache
+D:\IDTL\Epam\Task_2\bin\Debug\netcoreapp3.1\Figures.csv
