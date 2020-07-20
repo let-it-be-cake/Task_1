@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\GitHub\\Task_1\\Task_2_\\Task_2.csproj": {}
+    "D:\\IDTL\\Epam\\Task_2\\Task_2_\\Task_2.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\GitHub\\Task_1\\Task_2_\\Task_2.csproj": {
+    "D:\\IDTL\\Epam\\Task_2\\Task_2_\\Task_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\GitHub\\Task_1\\Task_2_\\Task_2.csproj",
+        "projectUniqueName": "D:\\IDTL\\Epam\\Task_2\\Task_2_\\Task_2.csproj",
         "projectName": "Task_2",
-        "projectPath": "D:\\Documents\\GitHub\\Task_1\\Task_2_\\Task_2.csproj",
+        "projectPath": "D:\\IDTL\\Epam\\Task_2\\Task_2_\\Task_2.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\GitHub\\Task_1\\Task_2_\\obj\\",
+        "outputPath": "D:\\IDTL\\Epam\\Task_2\\Task_2_\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
