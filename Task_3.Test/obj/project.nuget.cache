@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g0oJtL7pI+MuCt/SH4UOJjyuXz/oGN58rCmrXHulEbXca62fknKqceMrZIkkc6zKTzy1FzS0Q+Ze2PEOS6mNGg==",
+  "dgSpecHash": "eT6qgu/+oCiUPmXob33x8FhQAIqvZMcaXsj6FmXINx4GO7PIPf3pj7vNU48CNgxZQkMc/eUERasdVvwgRq5Pjg==",
   "success": true,
-  "projectFilePath": "D:\\IDTL\\Epam\\Task_2\\Task_3.Test\\Task_3.Test.csproj",
+  "projectFilePath": "D:\\Documents\\GitHub\\Task_1\\Task_3.Test\\Task_3.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

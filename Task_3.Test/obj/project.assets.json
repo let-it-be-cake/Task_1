@@ -3526,11 +3526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IDTL\\Epam\\Task_2\\Task_3.Test\\Task_3.Test.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub\\Task_1\\Task_3.Test\\Task_3.Test.csproj",
       "projectName": "Task_3.Test",
-      "projectPath": "D:\\IDTL\\Epam\\Task_2\\Task_3.Test\\Task_3.Test.csproj",
+      "projectPath": "D:\\Documents\\GitHub\\Task_1\\Task_3.Test\\Task_3.Test.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\IDTL\\Epam\\Task_2\\Task_3.Test\\obj\\",
+      "outputPath": "D:\\Documents\\GitHub\\Task_1\\Task_3.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3546,8 +3546,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\IDTL\\Epam\\Task_2\\Task_3\\Task_3.csproj": {
-              "projectPath": "D:\\IDTL\\Epam\\Task_2\\Task_3\\Task_3.csproj"
+            "D:\\Documents\\GitHub\\Task_1\\Task_3\\Task_3.csproj": {
+              "projectPath": "D:\\Documents\\GitHub\\Task_1\\Task_3\\Task_3.csproj"
             }
           }
         }
