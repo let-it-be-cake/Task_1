@@ -1,0 +1,9 @@
+D:\IDTL\Epam\Task_3\Shapes\bin\Debug\netstandard2.1\Shapes.deps.json
+D:\IDTL\Epam\Task_3\Shapes\bin\Debug\netstandard2.1\Shapes.dll
+D:\IDTL\Epam\Task_3\Shapes\bin\Debug\netstandard2.1\Shapes.pdb
+D:\IDTL\Epam\Task_3\Shapes\obj\Debug\netstandard2.1\Shapes.csprojAssemblyReference.cache
+D:\IDTL\Epam\Task_3\Shapes\obj\Debug\netstandard2.1\Shapes.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_3\Shapes\obj\Debug\netstandard2.1\Shapes.AssemblyInfo.cs
+D:\IDTL\Epam\Task_3\Shapes\obj\Debug\netstandard2.1\Shapes.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_3\Shapes\obj\Debug\netstandard2.1\Shapes.dll
+D:\IDTL\Epam\Task_3\Shapes\obj\Debug\netstandard2.1\Shapes.pdb

@@ -1,0 +1,18 @@
+<Wrap>
+  <PaperTriangle>
+    <Side1>1</Side1>
+    <Side2>2</Side2>
+    <Side3>1</Side3>
+    <IsColoring>False</IsColoring>
+    <Color>White</Color>
+  </PaperTriangle>
+  <MembraneCircle>
+    <Radius>4</Radius>
+  </MembraneCircle>
+  <PaperRectangle>
+    <Height>8</Height>
+    <Width>10</Width>
+    <IsColoring>True</IsColoring>
+    <Color>Green</Color>
+  </PaperRectangle>
+</Wrap>

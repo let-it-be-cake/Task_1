@@ -1,0 +1,32 @@
+<Wrap>
+  <PaperTriangle>
+    <Side1>10</Side1>
+    <Side2>12</Side2>
+    <Side3>11</Side3>
+    <IsColoring>True</IsColoring>
+    <Color>White</Color>
+  </PaperTriangle>
+  <MembraneTriangle>
+    <Side1>10</Side1>
+    <Side2>12</Side2>
+    <Side3>15</Side3>
+  </MembraneTriangle>
+  <PaperCircle>
+    <Radius>10</Radius>
+    <IsColoring>False</IsColoring>
+    <Color>White</Color>
+  </PaperCircle>
+  <MembraneCircle>
+    <Radius>11</Radius>
+  </MembraneCircle>
+  <PaperRectangle>
+    <Height>15</Height>
+    <Width>10</Width>
+    <IsColoring>False</IsColoring>
+    <Color>White</Color>
+  </PaperRectangle>
+  <MembraneRectangle>
+    <Height>11</Height>
+    <Width>22</Width>
+  </MembraneRectangle>
+</Wrap>

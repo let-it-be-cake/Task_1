@@ -1,0 +1,9 @@
+D:\IDTL\Epam\Task_3\Figures\obj\Debug\netstandard2.1\Figures.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_3\Figures\obj\Debug\netstandard2.1\Figures.AssemblyInfo.cs
+D:\IDTL\Epam\Task_3\Figures\obj\Debug\netstandard2.1\Figures.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_3\Figures\bin\Debug\netstandard2.1\Figures.deps.json
+D:\IDTL\Epam\Task_3\Figures\bin\Debug\netstandard2.1\Figures.dll
+D:\IDTL\Epam\Task_3\Figures\bin\Debug\netstandard2.1\Figures.pdb
+D:\IDTL\Epam\Task_3\Figures\obj\Debug\netstandard2.1\Figures.dll
+D:\IDTL\Epam\Task_3\Figures\obj\Debug\netstandard2.1\Figures.pdb
+D:\IDTL\Epam\Task_3\Figures\obj\Debug\netstandard2.1\Figures.csprojAssemblyReference.cache

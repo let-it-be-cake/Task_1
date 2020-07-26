@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Task_3/1.0.0": {
+        "dependencies": {
+          "IO": "1.0.0",
+          "Shapes": "1.0.0"
+        },
+        "runtime": {
+          "Task_3.dll": {}
+        }
+      },
+      "IO/1.0.0": {
+        "dependencies": {
+          "Shapes": "1.0.0"
+        },
+        "runtime": {
+          "IO.dll": {}
+        }
+      },
+      "Shapes/1.0.0": {
+        "runtime": {
+          "Shapes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Task_3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shapes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

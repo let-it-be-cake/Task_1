@@ -1,0 +1,12 @@
+D:\IDTL\Epam\Task_3\ReaderWriter\bin\Debug\netstandard2.1\IO.deps.json
+D:\IDTL\Epam\Task_3\ReaderWriter\bin\Debug\netstandard2.1\IO.dll
+D:\IDTL\Epam\Task_3\ReaderWriter\bin\Debug\netstandard2.1\IO.pdb
+D:\IDTL\Epam\Task_3\ReaderWriter\obj\Debug\netstandard2.1\IO.csprojAssemblyReference.cache
+D:\IDTL\Epam\Task_3\ReaderWriter\obj\Debug\netstandard2.1\IO.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_3\ReaderWriter\obj\Debug\netstandard2.1\IO.AssemblyInfo.cs
+D:\IDTL\Epam\Task_3\ReaderWriter\obj\Debug\netstandard2.1\IO.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_3\ReaderWriter\obj\Debug\netstandard2.1\IO.csproj.CopyComplete
+D:\IDTL\Epam\Task_3\ReaderWriter\obj\Debug\netstandard2.1\IO.dll
+D:\IDTL\Epam\Task_3\ReaderWriter\obj\Debug\netstandard2.1\IO.pdb
+D:\IDTL\Epam\Task_3\ReaderWriter\bin\Debug\netstandard2.1\Shapes.dll
+D:\IDTL\Epam\Task_3\ReaderWriter\bin\Debug\netstandard2.1\Shapes.pdb
