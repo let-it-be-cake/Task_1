@@ -1,0 +1,9 @@
+D:\IDTL\Epam\Task_4\Network\bin\Debug\netstandard2.0\NetworkClass.deps.json
+D:\IDTL\Epam\Task_4\Network\bin\Debug\netstandard2.0\NetworkClass.dll
+D:\IDTL\Epam\Task_4\Network\bin\Debug\netstandard2.0\NetworkClass.pdb
+D:\IDTL\Epam\Task_4\Network\obj\Debug\netstandard2.0\NetworkClass.csprojAssemblyReference.cache
+D:\IDTL\Epam\Task_4\Network\obj\Debug\netstandard2.0\NetworkClass.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_4\Network\obj\Debug\netstandard2.0\NetworkClass.AssemblyInfo.cs
+D:\IDTL\Epam\Task_4\Network\obj\Debug\netstandard2.0\NetworkClass.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_4\Network\obj\Debug\netstandard2.0\NetworkClass.dll
+D:\IDTL\Epam\Task_4\Network\obj\Debug\netstandard2.0\NetworkClass.pdb

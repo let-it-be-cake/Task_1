@@ -1,0 +1,16 @@
+D:\IDTL\Epam\Task_4\Server\obj\Debug\netcoreapp3.1\Servers.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_4\Server\obj\Debug\netcoreapp3.1\Servers.AssemblyInfo.cs
+D:\IDTL\Epam\Task_4\Server\obj\Debug\netcoreapp3.1\Servers.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_4\Server\bin\Debug\netcoreapp3.1\Servers.exe
+D:\IDTL\Epam\Task_4\Server\bin\Debug\netcoreapp3.1\Servers.deps.json
+D:\IDTL\Epam\Task_4\Server\bin\Debug\netcoreapp3.1\Servers.runtimeconfig.json
+D:\IDTL\Epam\Task_4\Server\bin\Debug\netcoreapp3.1\Servers.runtimeconfig.dev.json
+D:\IDTL\Epam\Task_4\Server\bin\Debug\netcoreapp3.1\Servers.dll
+D:\IDTL\Epam\Task_4\Server\bin\Debug\netcoreapp3.1\Servers.pdb
+D:\IDTL\Epam\Task_4\Server\bin\Debug\netcoreapp3.1\NetworkClass.dll
+D:\IDTL\Epam\Task_4\Server\bin\Debug\netcoreapp3.1\NetworkClass.pdb
+D:\IDTL\Epam\Task_4\Server\obj\Debug\netcoreapp3.1\Servers.csproj.CopyComplete
+D:\IDTL\Epam\Task_4\Server\obj\Debug\netcoreapp3.1\Servers.dll
+D:\IDTL\Epam\Task_4\Server\obj\Debug\netcoreapp3.1\Servers.pdb
+D:\IDTL\Epam\Task_4\Server\obj\Debug\netcoreapp3.1\Servers.genruntimeconfig.cache
+D:\IDTL\Epam\Task_4\Server\obj\Debug\netcoreapp3.1\Servers.csprojAssemblyReference.cache
