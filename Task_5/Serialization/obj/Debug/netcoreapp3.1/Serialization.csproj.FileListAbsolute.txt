@@ -1,0 +1,15 @@
+D:\IDTL\Epam\Task_5\Serialization\bin\Debug\netcoreapp3.1\Serialization.exe
+D:\IDTL\Epam\Task_5\Serialization\obj\Debug\netcoreapp3.1\Serialization.csprojAssemblyReference.cache
+D:\IDTL\Epam\Task_5\Serialization\obj\Debug\netcoreapp3.1\Serialization.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_5\Serialization\obj\Debug\netcoreapp3.1\Serialization.AssemblyInfo.cs
+D:\IDTL\Epam\Task_5\Serialization\bin\Debug\netcoreapp3.1\Serialization.deps.json
+D:\IDTL\Epam\Task_5\Serialization\bin\Debug\netcoreapp3.1\Serialization.runtimeconfig.json
+D:\IDTL\Epam\Task_5\Serialization\bin\Debug\netcoreapp3.1\Serialization.runtimeconfig.dev.json
+D:\IDTL\Epam\Task_5\Serialization\bin\Debug\netcoreapp3.1\Serialization.dll
+D:\IDTL\Epam\Task_5\Serialization\bin\Debug\netcoreapp3.1\Serialization.pdb
+D:\IDTL\Epam\Task_5\Serialization\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\IDTL\Epam\Task_5\Serialization\obj\Debug\netcoreapp3.1\Serialization.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_5\Serialization\obj\Debug\netcoreapp3.1\Serialization.csproj.CopyComplete
+D:\IDTL\Epam\Task_5\Serialization\obj\Debug\netcoreapp3.1\Serialization.dll
+D:\IDTL\Epam\Task_5\Serialization\obj\Debug\netcoreapp3.1\Serialization.pdb
+D:\IDTL\Epam\Task_5\Serialization\obj\Debug\netcoreapp3.1\Serialization.genruntimeconfig.cache

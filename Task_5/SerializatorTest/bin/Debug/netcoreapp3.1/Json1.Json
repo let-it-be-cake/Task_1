@@ -1,0 +1,9 @@
+{
+  "_version": 1.0,
+  "_type": {
+    "field1": "Test1",
+    "field2": 1,
+    "field3": 1.1
+  },
+  "_collection": null
+}

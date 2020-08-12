@@ -1,0 +1,14 @@
+{
+  "_version": 1.0,
+  "_type": {
+    "field1": [
+      "Test1",
+      "Test2"
+    ],
+    "field2": [
+      42,
+      2112
+    ]
+  },
+  "_collection": null
+}

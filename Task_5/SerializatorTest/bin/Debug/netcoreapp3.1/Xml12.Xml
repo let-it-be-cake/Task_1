@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<SerializeWrapperOfTestClass1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <_version>1</_version>
+  <_collection>
+    <TestClass1>
+      <field1>Test5</field1>
+      <field2>1111</field2>
+      <field3>11.11</field3>
+    </TestClass1>
+    <TestClass1>
+      <field1>Test6</field1>
+      <field2>242</field2>
+      <field3>101.011</field3>
+    </TestClass1>
+  </_collection>
+</SerializeWrapperOfTestClass1>

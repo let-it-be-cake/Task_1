@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pi3n0q0y9KqUNeDDAnZ2jJmcOIGr32RzG5I4Fyo/ob+Nw+y8E5cZ62ghEn7WSwAroXE9A9XoKva5z17GR30M1g==",
+  "success": true,
+  "projectFilePath": "D:\\IDTL\\Epam\\Task_5\\Serialization\\Serialization.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

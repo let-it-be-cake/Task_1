@@ -1,0 +1,16 @@
+D:\IDTL\Epam\Task_5\Task_1\bin\Debug\netcoreapp3.1\Task_1.exe
+D:\IDTL\Epam\Task_5\Task_1\bin\Debug\netcoreapp3.1\Task_1.deps.json
+D:\IDTL\Epam\Task_5\Task_1\bin\Debug\netcoreapp3.1\Task_1.runtimeconfig.json
+D:\IDTL\Epam\Task_5\Task_1\bin\Debug\netcoreapp3.1\Task_1.runtimeconfig.dev.json
+D:\IDTL\Epam\Task_5\Task_1\bin\Debug\netcoreapp3.1\Task_1.dll
+D:\IDTL\Epam\Task_5\Task_1\bin\Debug\netcoreapp3.1\Task_1.pdb
+D:\IDTL\Epam\Task_5\Task_1\bin\Debug\netcoreapp3.1\Tree.dll
+D:\IDTL\Epam\Task_5\Task_1\bin\Debug\netcoreapp3.1\Tree.pdb
+D:\IDTL\Epam\Task_5\Task_1\obj\Debug\netcoreapp3.1\Task_1.csprojAssemblyReference.cache
+D:\IDTL\Epam\Task_5\Task_1\obj\Debug\netcoreapp3.1\Task_1.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_5\Task_1\obj\Debug\netcoreapp3.1\Task_1.AssemblyInfo.cs
+D:\IDTL\Epam\Task_5\Task_1\obj\Debug\netcoreapp3.1\Task_1.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_5\Task_1\obj\Debug\netcoreapp3.1\Task_1.csproj.CopyComplete
+D:\IDTL\Epam\Task_5\Task_1\obj\Debug\netcoreapp3.1\Task_1.dll
+D:\IDTL\Epam\Task_5\Task_1\obj\Debug\netcoreapp3.1\Task_1.pdb
+D:\IDTL\Epam\Task_5\Task_1\obj\Debug\netcoreapp3.1\Task_1.genruntimeconfig.cache

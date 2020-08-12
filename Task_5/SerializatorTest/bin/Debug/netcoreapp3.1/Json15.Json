@@ -1,0 +1,26 @@
+{
+  "_version": 1.0,
+  "_type": null,
+  "_collection": [
+    {
+      "field1": [
+        "Ra",
+        "si"
+      ],
+      "field2": [
+        4252,
+        2281
+      ]
+    },
+    {
+      "field1": [
+        "AntiTest1",
+        "AntiTest2"
+      ],
+      "field2": [
+        1,
+        2
+      ]
+    }
+  ]
+}

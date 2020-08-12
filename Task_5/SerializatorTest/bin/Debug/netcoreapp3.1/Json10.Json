@@ -1,0 +1,16 @@
+{
+  "_version": 1.0,
+  "_type": null,
+  "_collection": [
+    {
+      "field1": "Test1",
+      "field2": 1,
+      "field3": 1.1
+    },
+    {
+      "field1": "Test2",
+      "field2": 42,
+      "field3": 11.11
+    }
+  ]
+}

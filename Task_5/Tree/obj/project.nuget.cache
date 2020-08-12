@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RqSfps0ezxsdCBx4yi3xjVtg3smXpKpyDSSbpVKRJtxWq5Uookn4MhqBFKJbQZtq2LU6q77RfSdJDJl3mYsR2Q==",
+  "success": true,
+  "projectFilePath": "D:\\IDTL\\Epam\\Task_5\\Tree\\Tree.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

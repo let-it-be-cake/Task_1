@@ -1,0 +1,9 @@
+D:\IDTL\Epam\Task_5\Tree\bin\Debug\netstandard2.0\Tree.deps.json
+D:\IDTL\Epam\Task_5\Tree\bin\Debug\netstandard2.0\Tree.dll
+D:\IDTL\Epam\Task_5\Tree\bin\Debug\netstandard2.0\Tree.pdb
+D:\IDTL\Epam\Task_5\Tree\obj\Debug\netstandard2.0\Tree.csprojAssemblyReference.cache
+D:\IDTL\Epam\Task_5\Tree\obj\Debug\netstandard2.0\Tree.AssemblyInfoInputs.cache
+D:\IDTL\Epam\Task_5\Tree\obj\Debug\netstandard2.0\Tree.AssemblyInfo.cs
+D:\IDTL\Epam\Task_5\Tree\obj\Debug\netstandard2.0\Tree.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_5\Tree\obj\Debug\netstandard2.0\Tree.dll
+D:\IDTL\Epam\Task_5\Tree\obj\Debug\netstandard2.0\Tree.pdb

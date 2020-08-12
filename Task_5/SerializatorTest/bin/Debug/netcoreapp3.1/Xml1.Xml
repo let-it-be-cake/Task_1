@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<SerializeWrapperOfTestClass1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <_version>1</_version>
+  <_type>
+    <field1>Test1</field1>
+    <field2>1</field2>
+    <field3>1.1</field3>
+  </_type>
+</SerializeWrapperOfTestClass1>

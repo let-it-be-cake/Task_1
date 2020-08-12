@@ -1,0 +1,26 @@
+{
+  "_version": 1.0,
+  "_type": null,
+  "_collection": [
+    {
+      "field1": [
+        "ZM",
+        "ag"
+      ],
+      "field2": [
+        12,
+        22
+      ]
+    },
+    {
+      "field1": [
+        "Test1",
+        "Test2"
+      ],
+      "field2": [
+        42,
+        2112
+      ]
+    }
+  ]
+}
