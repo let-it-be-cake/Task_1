@@ -4,6 +4,10 @@ using System.Text;
 
 namespace ORM.Tables
 {
+
+    /// <summary>
+    /// CreditList database table
+    /// </summary>
     public class CreditList : Table
     {
         public int Id { get; set; }

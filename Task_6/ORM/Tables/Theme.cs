@@ -2,6 +2,9 @@
 
 namespace ORM.Tables
 {
+    /// <summary>
+    /// Theme database table
+    /// </summary>
     public class Theme :Table
     {
         public int Id { get; set; }

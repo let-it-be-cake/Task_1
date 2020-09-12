@@ -1,4 +1,5 @@
 ﻿using Excel;
+using Excel.Interfaces;
 using Microsoft.Office.Interop.Excel;
 using ORM;
 
@@ -6,21 +7,32 @@ namespace Exc
 {
     public class ReportCreater
     {
-        private CreateTable _tableCreater;
-        private Sorting _sorting;
+        private ICreate _tableCreater;
+        private ISorting _sorting;
         private DataBase _data;
 
+        /// <summary>
+        /// Create xlsx report
+        /// Warning, need excel 2019
+        /// </summary>
+        /// <param name="data">Database for report creation</param>
         public ReportCreater(DataBase data)
         {
             _data = data;
             _tableCreater = new CreateTable();
         }
 
+        /// <summary>
+        /// Create mark report
+        /// </summary>
+        /// <param name="path">Path to save xlsx file</param>
+        /// <param name="sortingColumn">Column to sorting data</param>
+        /// <param name="order">How order data</param>
         public void MarkReport( string path,
             int? sortingColumn = null,
             OrderBy order = OrderBy.Ascending)
         {
-            var dataTable = _tableCreater.MarkTable(_data);
+            var dataTable = _tableCreater.Mark(_data);
 
             var writeTable = new WriteTable();
 
@@ -31,10 +43,16 @@ namespace Exc
             Sorting(dataTable, path, sortingColumn.Value, order);
         }
 
+        /// <summary>
+        /// Create dismissal report
+        /// </summary>
+        /// <param name="path">Path to save xlsx file</param>
+        /// <param name="sortingColumn">Column to sorting data</param>
+        /// <param name="order">How order data</param>
         public void DismissalReport( string path,
             int? sortingColumn = null, OrderBy order = OrderBy.Ascending)
         {
-            var dataTable = _tableCreater.DismissalTable(_data);
+            var dataTable = _tableCreater.Dismissal(_data);
 
             var writeTable = new WriteTable();
 
@@ -44,10 +62,16 @@ namespace Exc
             Sorting(dataTable, path, sortingColumn.Value, order);
         }
 
+        /// <summary>
+        /// Create sessions report
+        /// </summary>
+        /// <param name="path">Path to save xlsx file</param>
+        /// <param name="sortingColumn">Column to sorting data</param>
+        /// <param name="order">How order data</param>
         public void SessionsReport( string path,
             int? sortingColumn = null, OrderBy order = OrderBy.Ascending)
         {
-            var dataTable = _tableCreater.SessionsTable(_data);
+            var dataTable = _tableCreater.Sessions(_data);
 
             var writeTable = new WriteTable();
 
@@ -57,6 +81,13 @@ namespace Exc
             Sorting(dataTable, path, sortingColumn.Value, order);
         }
 
+        /// <summary>
+        /// Sorting xlsx file
+        /// </summary>
+        /// <param name="table">Table to get sizes</param>
+        /// <param name="path">Path to sort xlsx file</param>
+        /// <param name="sortingColumn">The sorted column</param>
+        /// <param name="order">How order data</param>
         private void Sorting(System.Data.DataTable table,
             string path,
             int sortingColumn,
@@ -68,5 +99,5 @@ namespace Exc
             _sorting = new Sorting(path);
             _sorting.Sort(1, 1, columns, rows, sortingColumn, (XlSortOrder)order);
         }
-                            }
+    }
 }

@@ -3,6 +3,10 @@ using System.Data.Common;
 
 namespace ORM.FabricMethodBasicMethod.Realisations
 {
+    /// <summary>
+    /// Abstract realisation for basic methods
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     abstract public class AbstractBasicMethods<T> where T : class, new()
     {
         public abstract void Create(T obj);

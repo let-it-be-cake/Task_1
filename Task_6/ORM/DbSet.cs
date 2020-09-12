@@ -6,14 +6,25 @@ using System.Linq;
 
 namespace ORM
 {
+    /// <summary>
+    /// DbSet for generic class
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class DbSet<T> where T : class, new()
     {
         private List<T> _enumerable = new List<T>();
         private DbContext _dbContext;
         private AbstractBasicMethods<T> _basic;
 
+        /// <summary>
+        /// Collection for database
+        /// </summary>
         public IEnumerable<T> Collection { get => _enumerable; }
 
+        /// <summary>
+        /// Create connection
+        /// </summary>
+        /// <param name="connection"></param>
         public DbSet(string connection)
         {
             _dbContext = new DbContext(connection);
@@ -21,9 +32,10 @@ namespace ORM
             _basic.SetConnection(_dbContext.Connection);
         }
 
-        public void SetConnection(string connection) =>
-            _dbContext = new DbContext(connection);
-
+        /// <summary>
+        /// Add new object to database
+        /// </summary>
+        /// <param name="obj"></param>
         public void Add(T obj)
         {
             if (_enumerable.Contains(obj))
@@ -36,6 +48,10 @@ namespace ORM
             _dbContext.Close();
         }
 
+        /// <summary>
+        /// Add collection to database
+        /// </summary>
+        /// <param name="collection"></param>
         public void Add(IEnumerable<T> collection)
         {
             _dbContext.Open();
@@ -50,6 +66,10 @@ namespace ORM
             _dbContext.Close();
         }
 
+        /// <summary>
+        /// Delete object from database
+        /// </summary>
+        /// <param name="obj">Delete object</param>
         public void Delete(T obj)
         {
             if (!_enumerable.Contains(obj))
@@ -61,6 +81,10 @@ namespace ORM
             _dbContext.Close();
         }
 
+        /// <summary>
+        /// Create object from database
+        /// </summary>
+        /// <param name="id">Delete an object by id from database</param>
         public void Delete(int id)
         {
             _dbContext.Open();
@@ -68,6 +92,10 @@ namespace ORM
             _dbContext.Close();
         }
 
+        /// <summary>
+        /// Delete collection from database
+        /// </summary>
+        /// <param name="collection">Collection to delete</param>
         public void Delete(IEnumerable<T> collection)// where T : class, new()
         {
             _dbContext.Open();
@@ -81,6 +109,10 @@ namespace ORM
             _dbContext.Close();
         }
 
+        /// <summary>
+        /// Update object in database
+        /// </summary>
+        /// <param name="obj">Object to update</param>
         public void Update(T obj)
         {
             _dbContext.Open();
@@ -89,6 +121,10 @@ namespace ORM
             Load();
         }
 
+        /// <summary>
+        /// Update collection in database
+        /// </summary>
+        /// <param name="collecion">Updated collection</param>
         public void Update(IEnumerable<T> collecion)
         {
             _dbContext.Open();
@@ -99,6 +135,9 @@ namespace ORM
             Load();
         }
 
+        /// <summary>
+        /// Load a collection from the database
+        /// </summary>
         public void Load()
         {
             _dbContext.Open();

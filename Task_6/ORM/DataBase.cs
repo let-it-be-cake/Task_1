@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace ORM
 {
+    /// <summary>
+    /// Database class
+    /// </summary>
     public class DataBase
     {
         public DbSet<Student> Student { get; set; }
@@ -29,10 +32,17 @@ namespace ORM
             Theme = new DbSet<Theme>(connection);
         }
 
-        private static readonly DataBase _instance;
+        private static DataBase _instance;
 
-        public static DataBase Get(string connection) =>
-            _instance == null ? new DataBase(connection) : _instance;
-
+        /// <summary>
+        /// Create one instance of database
+        /// </summary>
+        /// <param name="connection">Connection string for database</param>
+        /// <returns>Instance of database</returns>
+        public static DataBase Get(string connection)
+        {
+            _instance = _instance == null ? new DataBase(connection) : _instance;
+            return _instance;
+        }
     }
 }

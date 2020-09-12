@@ -2,6 +2,9 @@
 
 namespace ORM.Tables
 {
+    /// <summary>
+    /// Group database table
+    /// </summary>
     public class Group : Table
     {
         public int Id { get; set; }

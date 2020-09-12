@@ -2,6 +2,9 @@
 
 namespace ORM.Tables
 {
+    /// <summary>
+    /// Student database table
+    /// </summary>
     public class Student : Table
     {
         public int Id { get; set; }

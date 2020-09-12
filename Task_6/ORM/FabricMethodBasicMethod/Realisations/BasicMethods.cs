@@ -7,8 +7,11 @@ using System.Reflection;
 
 namespace ORM.FabricMethodBasicMethod.Realisations
 {
-    //Переделать таблицу в свойство и сделать нормлаьно
-    public class BasicMethods<T> : AbstractBasicMethods<T> where T : class, new()
+    /// <summary>
+    /// Basic method to work with database
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    internal class BasicMethods<T> : AbstractBasicMethods<T> where T : class, new()
     {
         private string _table;
 
@@ -20,8 +23,14 @@ namespace ORM.FabricMethodBasicMethod.Realisations
             Table = typeof(T).Name;
         }
 
+        /// <summary>
+        /// Set connection
+        /// </summary>
         public SqlConnection Connection { get; set; }
 
+        /// <summary>
+        /// Set table
+        /// </summary>
         public string Table
         {
             get => _table; set
@@ -33,10 +42,10 @@ namespace ORM.FabricMethodBasicMethod.Realisations
             }
         }
 
-
-        public void SetConnection(SqlConnection sqlConnection)
-            => Connection = sqlConnection;
-
+        /// <summary>
+        /// Create new object in database
+        /// </summary>
+        /// <param name="obj"></param>
         public override void Create(T obj)
         {
             string preInsert = @"SET IDENTITY_INSERT " + Table + " ON; INSERT INTO " + Table + " (";
@@ -73,6 +82,11 @@ namespace ORM.FabricMethodBasicMethod.Realisations
             sqlcommand.ExecuteNonQuery();
         }
 
+        /// <summary>
+        /// Read object from id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public override T Read(int id)
         {
             T obj = new T();
@@ -96,6 +110,10 @@ namespace ORM.FabricMethodBasicMethod.Realisations
             return obj;
         }
 
+        /// <summary>
+        /// Read all collection objects of database
+        /// </summary>
+        /// <returns></returns>
         public override IEnumerable<T> ReadAll()
         {
             string select = @"SELECT * from " + Table;
@@ -124,6 +142,10 @@ namespace ORM.FabricMethodBasicMethod.Realisations
             return list;
         }
 
+        /// <summary>
+        /// Update object in database
+        /// </summary>
+        /// <param name="obj"></param>
         public override void Update(T obj)
         {
             string update = "UPDATE " + Table + " SET ";
@@ -155,6 +177,10 @@ namespace ORM.FabricMethodBasicMethod.Realisations
             sqlCommand.ExecuteNonQuery();
         }
 
+        /// <summary>
+        /// Delete object in database
+        /// </summary>
+        /// <param name="obj"></param>
         public override void Delete(T obj)
         {
             string delete = "DELETE FROM " + Table + " WHERE ";
@@ -168,6 +194,10 @@ namespace ORM.FabricMethodBasicMethod.Realisations
             sqlCommand.ExecuteNonQuery();
         }
 
+        /// <summary>
+        /// Delete object in database
+        /// </summary>
+        /// <param name="id"></param>
         public override void Delete(int id)
         {
             string delete = "DELETE FROM " + Table + " WHERE ";
@@ -178,6 +208,10 @@ namespace ORM.FabricMethodBasicMethod.Realisations
             sqlCommand.ExecuteNonQuery();
         }
 
+        /// <summary>
+        /// Set connectin in database
+        /// </summary>
+        /// <param name="connection"></param>
         public override void SetConnection(DbConnection connection)
         {
             Connection = (SqlConnection)connection;

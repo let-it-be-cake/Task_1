@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a70t/m+KS55k5CpEimbLOVFSQpMdrmvlR3HDEJe54iNO6uAlhf+NMiscQQ9eeEFchKR/8pQVJgRHGjvCY7QMpw==",
+  "dgSpecHash": "fEDuUJ5qkLGoazcwXox9VmKHrdbs1+0v581nRtQLHUQlN4LoQ5v0FBM8F9QFbk4YoKIBSKUJJ1deq7i+bBoWFw==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\GitHub\\Task_6\\ORM\\ORM.csproj",
+  "projectFilePath": "D:\\Documents\\GitHub\\Task_1\\Task_6\\ORM\\ORM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

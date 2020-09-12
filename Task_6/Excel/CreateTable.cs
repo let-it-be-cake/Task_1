@@ -1,4 +1,5 @@
-﻿using ORM;
+﻿using Excel.Interfaces;
+using ORM;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -6,9 +7,17 @@ using DataTable = System.Data.DataTable;
 
 namespace Excel
 {
-    internal class CreateTable
+    /// <summary>
+    /// Internal class to create table
+    /// </summary>
+    internal class CreateTable : ICreate
     {
-        public DataTable MarkTable(DataBase data)
+        /// <summary>
+        ///  Generating a table with mark
+        /// </summary>
+        /// <param name="data">Database for table generation</param>
+        /// <returns></returns>
+        public DataTable Mark(DataBase data)
         {
             DataTable dataTable = new DataTable();
             var row = dataTable.NewRow();
@@ -63,7 +72,12 @@ namespace Excel
             return dataTable;
         }
 
-        public DataTable DismissalTable(DataBase data)
+        /// <summary>
+        /// Generating a table with dismissal students
+        /// </summary>
+        /// <param name="data">Database for table generation</param>
+        /// <returns></returns>
+        public DataTable Dismissal(DataBase data)
         {
             DataTable dataTable = new DataTable();
 
@@ -114,7 +128,12 @@ namespace Excel
             return dataTable;
         }
 
-        public DataTable SessionsTable(DataBase data)
+        /// <summary>
+        /// Generating a table with sessions
+        /// </summary>
+        /// <param name="data">Database for table generation</param>
+        /// <returns></returns>
+        public DataTable Sessions(DataBase data)
         {
             DataTable dataTable = new DataTable();
 

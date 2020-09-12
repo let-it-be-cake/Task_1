@@ -2,6 +2,9 @@
 
 namespace ORM.Tables
 {
+    /// <summary>
+    /// Credit database table
+    /// </summary>
     public class Credit : Table
     {
         public int Id { get; set; }

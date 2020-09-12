@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\GitHub\\Task_6\\ORM\\ORM.csproj": {}
+    "D:\\Documents\\GitHub\\Task_1\\Task_6\\ORM\\ORM.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\GitHub\\Task_6\\ORM\\ORM.csproj": {
+    "D:\\Documents\\GitHub\\Task_1\\Task_6\\ORM\\ORM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\GitHub\\Task_6\\ORM\\ORM.csproj",
+        "projectUniqueName": "D:\\Documents\\GitHub\\Task_1\\Task_6\\ORM\\ORM.csproj",
         "projectName": "ORM",
-        "projectPath": "D:\\Documents\\GitHub\\Task_6\\ORM\\ORM.csproj",
+        "projectPath": "D:\\Documents\\GitHub\\Task_1\\Task_6\\ORM\\ORM.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\GitHub\\Task_6\\ORM\\obj\\",
+        "outputPath": "D:\\Documents\\GitHub\\Task_1\\Task_6\\ORM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ORM", "ORM\ORM.csproj", "{6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excel", "Excel\Excel.csproj", "{6AA21807-EE05-4BF9-8BD9-5573DCB5F0E3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelTest", "ExcelTest\ExcelTest.csproj", "{2B25F3E1-712B-4F93-B36F-CF9E1BA3B348}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ORMTest", "ORMTest\ORMTest.csproj", "{5DA3BCBC-EB0B-4A66-A2D5-BA1C57D9E4E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6AA21807-EE05-4BF9-8BD9-5573DCB5F0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AA21807-EE05-4BF9-8BD9-5573DCB5F0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AA21807-EE05-4BF9-8BD9-5573DCB5F0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B25F3E1-712B-4F93-B36F-CF9E1BA3B348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B25F3E1-712B-4F93-B36F-CF9E1BA3B348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B25F3E1-712B-4F93-B36F-CF9E1BA3B348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B25F3E1-712B-4F93-B36F-CF9E1BA3B348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA3BCBC-EB0B-4A66-A2D5-BA1C57D9E4E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA3BCBC-EB0B-4A66-A2D5-BA1C57D9E4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA3BCBC-EB0B-4A66-A2D5-BA1C57D9E4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA3BCBC-EB0B-4A66-A2D5-BA1C57D9E4E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

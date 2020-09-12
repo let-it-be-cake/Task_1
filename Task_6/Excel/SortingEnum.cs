@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Excel
 {
+    /// <summary>
+    /// Sorting enums
+    /// </summary>
     public enum OrderBy
     {
         Ascending = XlSortOrder.xlAscending,

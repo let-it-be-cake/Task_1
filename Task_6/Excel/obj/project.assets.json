@@ -477,11 +477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\GitHub\\Task_6\\Excel\\Excel.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub\\Task_1\\Task_6\\Excel\\Excel.csproj",
       "projectName": "Excel",
-      "projectPath": "D:\\Documents\\GitHub\\Task_6\\Excel\\Excel.csproj",
+      "projectPath": "D:\\Documents\\GitHub\\Task_1\\Task_6\\Excel\\Excel.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\GitHub\\Task_6\\Excel\\obj\\",
+      "outputPath": "D:\\Documents\\GitHub\\Task_1\\Task_6\\Excel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -497,8 +497,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Documents\\GitHub\\Task_6\\ORM\\ORM.csproj": {
-              "projectPath": "D:\\Documents\\GitHub\\Task_6\\ORM\\ORM.csproj"
+            "D:\\Documents\\GitHub\\Task_1\\Task_6\\ORM\\ORM.csproj": {
+              "projectPath": "D:\\Documents\\GitHub\\Task_1\\Task_6\\ORM\\ORM.csproj"
             }
           }
         }

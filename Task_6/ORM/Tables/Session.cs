@@ -2,6 +2,9 @@
 
 namespace ORM.Tables
 {
+    /// <summary>
+    /// Session database table
+    /// </summary>
     public class Session : Table
     {
         public int Id { get; set; }
