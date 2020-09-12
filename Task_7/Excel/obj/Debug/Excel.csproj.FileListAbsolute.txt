@@ -1,0 +1,11 @@
+D:\Documents\GitHub\Task_1\Task_7\Excel\obj\Debug\Excel.csprojAssemblyReference.cache
+D:\Documents\GitHub\Task_1\Task_7\Excel\obj\Debug\Excel.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Task_1\Task_7\Excel\bin\Debug\Excel.dll
+D:\Documents\GitHub\Task_1\Task_7\Excel\bin\Debug\Excel.pdb
+D:\Documents\GitHub\Task_1\Task_7\Excel\bin\Debug\Orm.dll
+D:\Documents\GitHub\Task_1\Task_7\Excel\bin\Debug\Orm.pdb
+D:\Documents\GitHub\Task_1\Task_7\Excel\bin\Debug\Orm.dll.config
+D:\Documents\GitHub\Task_1\Task_7\Excel\obj\Debug\Excel.csproj.ResolveComReference.cache
+D:\Documents\GitHub\Task_1\Task_7\Excel\obj\Debug\Excel.csproj.CopyComplete
+D:\Documents\GitHub\Task_1\Task_7\Excel\obj\Debug\Excel.dll
+D:\Documents\GitHub\Task_1\Task_7\Excel\obj\Debug\Excel.pdb

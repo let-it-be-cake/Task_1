@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Colledge1" Class="DataBaseClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ADMIN-PC;Initial Catalog=Colledge1;Integrated Security=True" SettingsObjectName="Orm.Properties.Settings" SettingsPropertyName="Colledge1ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Credit" Member="Credit">
+    <Type Name="Credit">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubjectId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExaminerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateOfCredit" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Examiner_Credit" Member="Examiner" ThisKey="ExaminerId" OtherKey="Id" Type="Examiner" IsForeignKey="true" />
+      <Association Name="Group_Credit" Member="Group" ThisKey="GroupId" OtherKey="Id" Type="Group" IsForeignKey="true" />
+      <Association Name="Subject_Credit" Member="Subject" ThisKey="SubjectId" OtherKey="Id" Type="Subject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Theme" Member="Theme">
+    <Type Name="Theme">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SubjectId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Subject_Theme" Member="Subject" ThisKey="SubjectId" OtherKey="Id" Type="Subject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CreditList" Member="CreditList">
+    <Type Name="CreditList">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubjectId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SessionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Passed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Session_CreditList" Member="Session" ThisKey="SessionId" OtherKey="Id" Type="Session" IsForeignKey="true" />
+      <Association Name="Student_CreditList" Member="Student" ThisKey="StudentId" OtherKey="Id" Type="Student" IsForeignKey="true" />
+      <Association Name="Subject_CreditList" Member="Subject" ThisKey="SubjectId" OtherKey="Id" Type="Subject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Exam" Member="Exam">
+    <Type Name="Exam">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubjectId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateOfExam" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ExaminerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Examiner_Exam" Member="Examiner" ThisKey="ExaminerId" OtherKey="Id" Type="Examiner" IsForeignKey="true" />
+      <Association Name="Group_Exam" Member="Group" ThisKey="GroupId" OtherKey="Id" Type="Group" IsForeignKey="true" />
+      <Association Name="Subject_Exam" Member="Subject" ThisKey="SubjectId" OtherKey="Id" Type="Subject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Examiner" Member="Examiner">
+    <Type Name="Examiner">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="LastName" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Examiner_Credit" Member="Credit" ThisKey="Id" OtherKey="ExaminerId" Type="Credit" />
+      <Association Name="Examiner_Exam" Member="Exam" ThisKey="Id" OtherKey="ExaminerId" Type="Exam" />
+      <Association Name="Examiner_Gradebook" Member="Gradebook" ThisKey="Id" OtherKey="ExaminerId" Type="Gradebook" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Gradebook" Member="Gradebook">
+    <Type Name="Gradebook">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubjectId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SessionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExaminerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Mark" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Examiner_Gradebook" Member="Examiner" ThisKey="ExaminerId" OtherKey="Id" Type="Examiner" IsForeignKey="true" />
+      <Association Name="Session_Gradebook" Member="Session" ThisKey="SessionId" OtherKey="Id" Type="Session" IsForeignKey="true" />
+      <Association Name="Student_Gradebook" Member="Student" ThisKey="StudentId" OtherKey="Id" Type="Student" IsForeignKey="true" />
+      <Association Name="Subject_Gradebook" Member="Subject" ThisKey="SubjectId" OtherKey="Id" Type="Subject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Group]" Member="Group">
+    <Type Name="Group">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SpecialtyId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Group_Credit" Member="Credit" ThisKey="Id" OtherKey="GroupId" Type="Credit" />
+      <Association Name="Group_Exam" Member="Exam" ThisKey="Id" OtherKey="GroupId" Type="Exam" />
+      <Association Name="Group_Session" Member="Session" ThisKey="Id" OtherKey="GroupId" Type="Session" />
+      <Association Name="Group_Student" Member="Student" ThisKey="Id" OtherKey="GroupId" Type="Student" />
+      <Association Name="Specialty_Group" Member="Specialty" ThisKey="SpecialtyId" OtherKey="Id" Type="Specialty" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Session" Member="Session">
+    <Type Name="Session">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="Session_CreditList" Member="CreditList" ThisKey="Id" OtherKey="SessionId" Type="CreditList" />
+      <Association Name="Session_Gradebook" Member="Gradebook" ThisKey="Id" OtherKey="SessionId" Type="Gradebook" />
+      <Association Name="Group_Session" Member="Group" ThisKey="GroupId" OtherKey="Id" Type="Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Specialty" Member="Specialty">
+    <Type Name="Specialty">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Specialty_Group" Member="Group" ThisKey="Id" OtherKey="SpecialtyId" Type="Group" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student" Member="Student">
+    <Type Name="Student">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastName" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Student_CreditList" Member="CreditList" ThisKey="Id" OtherKey="StudentId" Type="CreditList" />
+      <Association Name="Student_Gradebook" Member="Gradebook" ThisKey="Id" OtherKey="StudentId" Type="Gradebook" />
+      <Association Name="Group_Student" Member="Group" ThisKey="GroupId" OtherKey="Id" Type="Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject" Member="Subject">
+    <Type Name="Subject">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Subject_Credit" Member="Credit" ThisKey="Id" OtherKey="SubjectId" Type="Credit" />
+      <Association Name="Subject_Theme" Member="Theme" ThisKey="Id" OtherKey="SubjectId" Type="Theme" />
+      <Association Name="Subject_CreditList" Member="CreditList" ThisKey="Id" OtherKey="SubjectId" Type="CreditList" />
+      <Association Name="Subject_Exam" Member="Exam" ThisKey="Id" OtherKey="SubjectId" Type="Exam" />
+      <Association Name="Subject_Gradebook" Member="Gradebook" ThisKey="Id" OtherKey="SubjectId" Type="Gradebook" />
+    </Type>
+  </Table>
+</Database>

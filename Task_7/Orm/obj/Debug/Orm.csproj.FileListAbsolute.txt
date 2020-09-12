@@ -1,0 +1,13 @@
+D:\IDTL\Epam\Task_7\Orm\bin\Debug\Orm.dll.config
+D:\IDTL\Epam\Task_7\Orm\bin\Debug\Orm.dll
+D:\IDTL\Epam\Task_7\Orm\bin\Debug\Orm.pdb
+D:\IDTL\Epam\Task_7\Orm\obj\Debug\Orm.csproj.CoreCompileInputs.cache
+D:\IDTL\Epam\Task_7\Orm\obj\Debug\Orm.dll
+D:\IDTL\Epam\Task_7\Orm\obj\Debug\Orm.pdb
+D:\Documents\GitHub\Task_1\Task_7\Orm\bin\Debug\Orm.dll.config
+D:\Documents\GitHub\Task_1\Task_7\Orm\bin\Debug\Orm.dll
+D:\Documents\GitHub\Task_1\Task_7\Orm\bin\Debug\Orm.pdb
+D:\Documents\GitHub\Task_1\Task_7\Orm\obj\Debug\Orm.csprojAssemblyReference.cache
+D:\Documents\GitHub\Task_1\Task_7\Orm\obj\Debug\Orm.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Task_1\Task_7\Orm\obj\Debug\Orm.dll
+D:\Documents\GitHub\Task_1\Task_7\Orm\obj\Debug\Orm.pdb
