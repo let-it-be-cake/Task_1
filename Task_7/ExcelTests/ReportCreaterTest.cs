@@ -16,6 +16,8 @@ namespace ExcelTest
         private const string markPath = @"Mark.txt";
         private const string dismissalPath = @"Dismissal.txt";
         private const string sessionsPath = @"Sessions.txt";
+        private const string allSessionsPath = @"AllSessions.txt";
+        private const string oneSessionsPath = @"OneSessions.txt";
 
         [TestMethod]
         public void ReportMarkTestWithoutSorting()
@@ -75,6 +77,47 @@ namespace ExcelTest
             // act
             var report = new ReportCreater(db);
             report.MarkReport(sessionsPath, 1, Excel.OrderBy.Decending);
+        }
+
+
+        [TestMethod]
+        public void ReportOneSessionsTestWithoutSorting()
+        {
+            // arrange
+            var db = DataBase.Get(connection);
+            // act
+            var report = new ReportCreater(db);
+            report.OneSessionReport(oneSessionsPath);
+        }
+
+        [TestMethod]
+        public void ReportOneSessionsTestWithSorting()
+        {
+            // arrange
+            var db = DataBase.Get(connection);
+            // act
+            var report = new ReportCreater(db);
+            report.OneSessionReport(oneSessionsPath, 1, Excel.OrderBy.Decending);
+        }
+
+        [TestMethod]
+        public void ReportAllSessionsTestWithoutSorting()
+        {
+            // arrange
+            var db = DataBase.Get(connection);
+            // act
+            var report = new ReportCreater(db);
+            report.AllSessionsReport(allSessionsPath);
+        }
+
+        [TestMethod]
+        public void ReportAllSessionsTestWithSorting()
+        {
+            // arrange
+            var db = DataBase.Get(connection);
+            // act
+            var report = new ReportCreater(db);
+            report.AllSessionsReport(allSessionsPath, 1, Excel.OrderBy.Decending);
         }
     }
 }

@@ -913,9 +913,13 @@ namespace Orm
 		
 		private System.Nullable<int> _ExaminerId;
 		
+		private System.Nullable<int> _SessionId;
+		
 		private EntityRef<Examiner> _Examiner;
 		
 		private EntityRef<Group> _Group;
+		
+		private EntityRef<Session> _Session;
 		
 		private EntityRef<Subject> _Subject;
 		
@@ -933,12 +937,15 @@ namespace Orm
     partial void OnDateOfExamChanged();
     partial void OnExaminerIdChanging(System.Nullable<int> value);
     partial void OnExaminerIdChanged();
+    partial void OnSessionIdChanging(System.Nullable<int> value);
+    partial void OnSessionIdChanged();
     #endregion
 		
 		public Exam()
 		{
 			this._Examiner = default(EntityRef<Examiner>);
 			this._Group = default(EntityRef<Group>);
+			this._Session = default(EntityRef<Session>);
 			this._Subject = default(EntityRef<Subject>);
 			OnCreated();
 		}
@@ -1055,6 +1062,30 @@ namespace Orm
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SessionId", DbType="Int")]
+		public System.Nullable<int> SessionId
+		{
+			get
+			{
+				return this._SessionId;
+			}
+			set
+			{
+				if ((this._SessionId != value))
+				{
+					if (this._Session.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnSessionIdChanging(value);
+					this.SendPropertyChanging();
+					this._SessionId = value;
+					this.SendPropertyChanged("SessionId");
+					this.OnSessionIdChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Examiner_Exam", Storage="_Examiner", ThisKey="ExaminerId", OtherKey="Id", IsForeignKey=true)]
 		public Examiner Examiner
 		{
@@ -1119,6 +1150,40 @@ namespace Orm
 						this._GroupId = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Group");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Session_Exam", Storage="_Session", ThisKey="SessionId", OtherKey="Id", IsForeignKey=true)]
+		public Session Session
+		{
+			get
+			{
+				return this._Session.Entity;
+			}
+			set
+			{
+				Session previousValue = this._Session.Entity;
+				if (((previousValue != value) 
+							|| (this._Session.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Session.Entity = null;
+						previousValue.Exam.Remove(this);
+					}
+					this._Session.Entity = value;
+					if ((value != null))
+					{
+						value.Exam.Add(this);
+						this._SessionId = value.Id;
+					}
+					else
+					{
+						this._SessionId = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Session");
 				}
 			}
 		}
@@ -1997,6 +2062,8 @@ namespace Orm
 		
 		private EntitySet<CreditList> _CreditList;
 		
+		private EntitySet<Exam> _Exam;
+		
 		private EntitySet<Gradebook> _Gradebook;
 		
 		private EntityRef<Group> _Group;
@@ -2018,6 +2085,7 @@ namespace Orm
 		public Session()
 		{
 			this._CreditList = new EntitySet<CreditList>(new Action<CreditList>(this.attach_CreditList), new Action<CreditList>(this.detach_CreditList));
+			this._Exam = new EntitySet<Exam>(new Action<Exam>(this.attach_Exam), new Action<Exam>(this.detach_Exam));
 			this._Gradebook = new EntitySet<Gradebook>(new Action<Gradebook>(this.attach_Gradebook), new Action<Gradebook>(this.detach_Gradebook));
 			this._Group = default(EntityRef<Group>);
 			OnCreated();
@@ -2120,6 +2188,19 @@ namespace Orm
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Session_Exam", Storage="_Exam", ThisKey="Id", OtherKey="SessionId")]
+		public EntitySet<Exam> Exam
+		{
+			get
+			{
+				return this._Exam;
+			}
+			set
+			{
+				this._Exam.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Session_Gradebook", Storage="_Gradebook", ThisKey="Id", OtherKey="SessionId")]
 		public EntitySet<Gradebook> Gradebook
 		{
@@ -2194,6 +2275,18 @@ namespace Orm
 		}
 		
 		private void detach_CreditList(CreditList entity)
+		{
+			this.SendPropertyChanging();
+			entity.Session = null;
+		}
+		
+		private void attach_Exam(Exam entity)
+		{
+			this.SendPropertyChanging();
+			entity.Session = this;
+		}
+		
+		private void detach_Exam(Exam entity)
 		{
 			this.SendPropertyChanging();
 			entity.Session = null;

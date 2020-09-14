@@ -189,5 +189,111 @@ namespace Excel
             return dataTable;
         }
 
+        public DataTable OneSession(DataBase data)
+        {
+            DataTable dataTable = new DataTable();
+
+            var row = dataTable.NewRow();
+
+            for (int i = 0; i < 5; i++)
+            {
+                dataTable.Columns.Add(new DataColumn());
+            }
+
+            row[0] = "Speciality";
+            row[1] = "Average Mark";
+            row[2] = "Examiner Name";
+            row[3] = "Average Mark";
+
+            dataTable.Rows.Add(row);
+
+            row = dataTable.NewRow();
+
+            data.Session.Load();
+            data.Examiner.Load();
+
+            var sessions = data.Session.Collection;
+            var examiners = data.Examiner.Collection;
+
+            foreach (var session in sessions)
+            {
+                int summingMark = 0;
+                int numberOfMarks = 0;
+
+                row[0] = session.Id;
+
+                session
+                    .Group
+                    .Student
+                    .ToList()
+                    .ForEach(student =>
+                        {
+                            var markCollection = student
+                            .Gradebook
+                            .Select(o => o.Mark);
+                            summingMark += markCollection.Sum();
+                            numberOfMarks += markCollection.Count();
+                        });
+
+                if (numberOfMarks == 0)
+                    row[1] = 0;
+                else
+                    row[1] = summingMark / numberOfMarks;
+
+                session
+                    .Gradebook
+                    .ToList()
+                    .ForEach(gradebook => {
+                        row[2] = gradebook?
+                            .Examiner
+                            .Name;
+
+                        row[3] = gradebook
+                            .Examiner
+                            .Gradebook
+                            .Select(o => o.Mark)
+                            .Average();
+
+                        dataTable.Rows.Add(row);
+
+                        row = dataTable.NewRow();
+                });
+
+            }
+            return dataTable;
+        }
+        public DataTable AllSessions(DataBase data)
+        {
+            DataTable dataTable = new DataTable();
+
+            var row = dataTable.NewRow();
+
+            for (int i = 0; i < 5; i++)
+            {
+                dataTable.Columns.Add(new DataColumn());
+            }
+
+            row[0] = "Session";
+            row[1] = "Subject";
+            row[2] = "Year";
+            row[3] = "Average Mark";
+
+            dataTable.Rows.Add(row);
+
+            row = dataTable.NewRow();
+
+            data.Exam.Load();
+
+            var exams = data.Exam.Collection;
+
+            foreach (var exam in exams)
+            {
+                row[0] = exam.Session.Id;
+                row[1] = exam.Subject.Name;
+                row[2] = exam.Session.StartDate.Year;
+                row[3] = exam.Session.Gradebook.Average(o => o.Mark);
+            }
+            return dataTable;
+        }
     }
 }

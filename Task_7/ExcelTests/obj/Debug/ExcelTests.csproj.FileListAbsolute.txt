@@ -22,3 +22,4 @@ D:\Documents\GitHub\Task_1\Task_7\ExcelTests\obj\Debug\ExcelTests.csproj.CoreCom
 D:\Documents\GitHub\Task_1\Task_7\ExcelTests\obj\Debug\ExcelTests.csproj.CopyComplete
 D:\Documents\GitHub\Task_1\Task_7\ExcelTests\obj\Debug\EPAM_Task7_Test.dll
 D:\Documents\GitHub\Task_1\Task_7\ExcelTests\obj\Debug\EPAM_Task7_Test.pdb
+D:\Documents\GitHub\Task_1\Task_7\ExcelTests\obj\Debug\ExcelTests.csprojAssemblyReference.cache

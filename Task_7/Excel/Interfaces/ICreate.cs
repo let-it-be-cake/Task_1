@@ -10,5 +10,7 @@ namespace Excel.Interfaces
         DataTable Dismissal(DataBase data);
 
         DataTable Sessions(DataBase data);
+        DataTable OneSession(DataBase data);
+        DataTable AllSessions(DataBase data);
     }
 }

@@ -39,8 +39,10 @@
       <Column Name="SubjectId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="DateOfExam" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="ExaminerId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SessionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Examiner_Exam" Member="Examiner" ThisKey="ExaminerId" OtherKey="Id" Type="Examiner" IsForeignKey="true" />
       <Association Name="Group_Exam" Member="Group" ThisKey="GroupId" OtherKey="Id" Type="Group" IsForeignKey="true" />
+      <Association Name="Session_Exam" Member="Session" ThisKey="SessionId" OtherKey="Id" Type="Session" IsForeignKey="true" />
       <Association Name="Subject_Exam" Member="Subject" ThisKey="SubjectId" OtherKey="Id" Type="Subject" IsForeignKey="true" />
     </Type>
   </Table>
@@ -87,6 +89,7 @@
       <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="EndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Association Name="Session_CreditList" Member="CreditList" ThisKey="Id" OtherKey="SessionId" Type="CreditList" />
+      <Association Name="Session_Exam" Member="Exam" ThisKey="Id" OtherKey="SessionId" Type="Exam" />
       <Association Name="Session_Gradebook" Member="Gradebook" ThisKey="Id" OtherKey="SessionId" Type="Gradebook" />
       <Association Name="Group_Session" Member="Group" ThisKey="GroupId" OtherKey="Id" Type="Group" IsForeignKey="true" />
     </Type>

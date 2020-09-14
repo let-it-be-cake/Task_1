@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [Colledge1]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Database [Colledge1]    Script Date: 14.09.2020 22:39:50 ******/
 CREATE DATABASE [Colledge1]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -80,7 +80,7 @@ ALTER DATABASE [Colledge1] SET QUERY_STORE = OFF
 GO
 USE [Colledge1]
 GO
-/****** Object:  Table [dbo].[Credit]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Credit]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -97,7 +97,7 @@ CREATE TABLE [dbo].[Credit](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CreditList]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[CreditList]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -114,7 +114,7 @@ CREATE TABLE [dbo].[CreditList](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Exam]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Exam]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -125,13 +125,14 @@ CREATE TABLE [dbo].[Exam](
 	[SubjectId] [int] NULL,
 	[DateOfExam] [date] NULL,
 	[ExaminerId] [int] NULL,
+	[SessionId] [int] NULL,
  CONSTRAINT [PK_Exam] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Examiner]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Examiner]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -146,7 +147,7 @@ CREATE TABLE [dbo].[Examiner](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Gradebook]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Gradebook]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -164,7 +165,7 @@ CREATE TABLE [dbo].[Gradebook](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Group]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Group]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -179,7 +180,7 @@ CREATE TABLE [dbo].[Group](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Session]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Session]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -195,7 +196,7 @@ CREATE TABLE [dbo].[Session](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Specialty]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Specialty]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -209,7 +210,7 @@ CREATE TABLE [dbo].[Specialty](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Student]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Student]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -226,7 +227,7 @@ CREATE TABLE [dbo].[Student](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Subject]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Subject]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -240,7 +241,7 @@ CREATE TABLE [dbo].[Subject](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Theme]    Script Date: 12.09.2020 23:40:58 ******/
+/****** Object:  Table [dbo].[Theme]    Script Date: 14.09.2020 22:39:51 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -283,15 +284,15 @@ SET IDENTITY_INSERT [dbo].[CreditList] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Exam] ON 
 
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (8, 3, 4, CAST(N'2010-10-10' AS Date), 1)
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (9, 3, 5, CAST(N'2011-10-10' AS Date), 2)
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (10, 3, 6, CAST(N'2010-10-10' AS Date), 1)
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (11, 3, 7, CAST(N'2010-10-10' AS Date), 2)
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (12, 4, 3, CAST(N'2010-10-10' AS Date), 1)
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (13, 4, 4, CAST(N'2011-11-11' AS Date), 2)
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (14, 4, 5, CAST(N'2012-12-12' AS Date), 1)
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (15, 4, 6, CAST(N'2010-10-10' AS Date), 2)
-INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId]) VALUES (16, 4, 7, CAST(N'2011-11-11' AS Date), 1)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (8, 3, 4, CAST(N'2010-10-10' AS Date), 1, 9)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (9, 3, 5, CAST(N'2011-10-10' AS Date), 2, 11)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (10, 3, 6, CAST(N'2010-10-10' AS Date), 1, 12)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (11, 3, 7, CAST(N'2010-10-10' AS Date), 2, 13)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (12, 4, 3, CAST(N'2010-10-10' AS Date), 1, 9)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (13, 4, 4, CAST(N'2011-11-11' AS Date), 2, 11)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (14, 4, 5, CAST(N'2012-12-12' AS Date), 1, 12)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (15, 4, 6, CAST(N'2010-10-10' AS Date), 2, 13)
+INSERT [dbo].[Exam] ([Id], [GroupId], [SubjectId], [DateOfExam], [ExaminerId], [SessionId]) VALUES (16, 4, 7, CAST(N'2011-11-11' AS Date), 1, 9)
 SET IDENTITY_INSERT [dbo].[Exam] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Examiner] ON 
@@ -405,6 +406,11 @@ ALTER TABLE [dbo].[CreditList]  WITH CHECK ADD  CONSTRAINT [FK_CreditList_Subjec
 REFERENCES [dbo].[Subject] ([Id])
 GO
 ALTER TABLE [dbo].[CreditList] CHECK CONSTRAINT [FK_CreditList_Subject]
+GO
+ALTER TABLE [dbo].[Exam]  WITH CHECK ADD  CONSTRAINT [FK_Exam_Exam] FOREIGN KEY([SessionId])
+REFERENCES [dbo].[Session] ([Id])
+GO
+ALTER TABLE [dbo].[Exam] CHECK CONSTRAINT [FK_Exam_Exam]
 GO
 ALTER TABLE [dbo].[Exam]  WITH CHECK ADD  CONSTRAINT [FK_Exam_Examiner] FOREIGN KEY([ExaminerId])
 REFERENCES [dbo].[Examiner] ([Id])

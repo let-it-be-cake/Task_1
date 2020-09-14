@@ -28,7 +28,7 @@ namespace Exc
         /// <param name="path">Path to save xlsx file</param>
         /// <param name="sortingColumn">Column to sorting data</param>
         /// <param name="order">How order data</param>
-        public void MarkReport( string path,
+        public void MarkReport(string path,
             int? sortingColumn = null,
             OrderBy order = OrderBy.Ascending)
         {
@@ -80,7 +80,43 @@ namespace Exc
             if (sortingColumn == null) return;
             Sorting(dataTable, path, sortingColumn.Value, order);
         }
+        /// <summary>
+        /// Creating a report for a single session
+        /// </summary>
+        /// <param name="path">Path to save xlsx file</param>
+        /// <param name="sortingColumn">Column to sorting data</param>
+        /// <param name="order">How order data</param>
+        public void OneSessionReport(string path,
+            int? sortingColumn = null, OrderBy order = OrderBy.Ascending)
+        {
+            var dataTable = _tableCreater.OneSession(_data);
 
+            var writeTable = new WriteTable();
+
+            writeTable.Write(dataTable, path);
+
+            if (sortingColumn == null) return;
+            Sorting(dataTable, path, sortingColumn.Value, order);
+        }
+        /// <summary>
+        /// Creating a report for all sessions
+        /// </summary>
+        /// <param name="path">Path to save xlsx file</param>
+        /// <param name="sortingColumn">Column to sorting data</param>
+        /// <param name="order">How order data</param>
+        public void AllSessionsReport(string path,
+            int? sortingColumn = null, OrderBy order = OrderBy.Ascending)
+        {
+            var dataTable = _tableCreater.AllSessions(_data);
+
+            var writeTable = new WriteTable();
+
+            writeTable.Write(dataTable, path);
+            
+            if (sortingColumn == null) return;
+            Sorting(dataTable, path, sortingColumn.Value, order);
+
+        }
         /// <summary>
         /// Sorting xlsx file
         /// </summary>
